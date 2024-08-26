@@ -1,0 +1,2 @@
+Es un valor que tengo que recordar? variable
+Es un valor que tengo que calcular? calculo

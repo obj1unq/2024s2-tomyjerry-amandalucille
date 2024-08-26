@@ -1,27 +1,37 @@
 object tom {
+	var energia = 50
 	
-	//Completar! Pueden aparecer variables y métodos nuevos!
-	 
 	method comer(raton) {
-		//Completar
+		energia = energia + 12 + raton.peso()
 	}
 	
 	method correr(distancia){
-		//Completar!
+		energia = energia - (distancia / 2)	
 	}
 	
 	method velocidadMaxima()  {
-		//Completar!
+		return energia + 5 + (energia / 10)
 	}
 	
 }
 
 object jerry {
-	//Completar!
+	var edad = 2
+
+	method peso(){
+		return edad * 20
+	}
+	method cumplir(anios){
+		edad = edad + anios
+	}
+
 }
 
 object nibbles {
-	//Completar!
+	
+	method peso(){
+		return 35
+	} 
 }
 
 
