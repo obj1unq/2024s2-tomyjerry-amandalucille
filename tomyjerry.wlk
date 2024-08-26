@@ -1,6 +1,6 @@
 object tom {
 	var energia = 50
-	
+
 	method comer(raton) {
 		energia = energia + 12 + raton.peso()
 	}
@@ -10,7 +10,7 @@ object tom {
 	}
 	
 	method velocidadMaxima()  {
-		return energia + 5 + (energia / 10)
+		return 5 + (energia / 10)
 	}
 	
 }
@@ -21,8 +21,8 @@ object jerry {
 	method peso(){
 		return edad * 20
 	}
-	method cumplir(anios){
-		edad = edad + anios
+	method cumplir(){
+		edad = edad + 1
 	}
 
 }
