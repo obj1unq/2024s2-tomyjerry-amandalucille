@@ -1,2 +1,2 @@
 Es un valor que tengo que recordar? variable
-Es un valor que tengo que calcular? calculo
+Es un valor que tengo que calcular (depende de otra variable)? calculo. NO USO VARIABLE

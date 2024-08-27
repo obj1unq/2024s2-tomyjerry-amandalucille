@@ -4,7 +4,7 @@ test "tom come a jerry y nibbles"
 {
     assert.equals(10,tom.velocidadMaxima())
     tom.comer(jerry)
-    }
+
     assert.equals(15,tom.velocidadMaxima())
     tom.correr(24)
     assert.equals(14,tom.velocidadMaxima())
