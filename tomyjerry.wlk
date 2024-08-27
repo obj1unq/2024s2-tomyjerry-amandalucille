@@ -28,7 +28,6 @@ object jerry {
 }
 
 object nibbles {
-	
 	method peso(){
 		return 35
 	} 
