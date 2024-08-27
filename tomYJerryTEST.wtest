@@ -1,10 +1,11 @@
 import tomyjerry.*
+//Caso de prueba parte 1
 describe "Tom y Jerry"{
 test "tom come a jerry y nibbles"
     {    
     assert.equals(10,tom.velocidadMaxima())
     tom.comer(jerry) 
-    assert.equals(15.2,tom.velocidadMaxima())//
+    assert.equals(15.2,tom.velocidadMaxima())
     tom.correr(24)
     assert.equals(14,tom.velocidadMaxima())
     tom.comer(nibbles)
@@ -16,3 +17,13 @@ test "tom come a jerry y nibbles"
    /* assert.equals(24, tom.velocidadMaxima())*/
     }
 }
+
+//Caso de prueba Parte 2:  Poder y Querer comer.
+describe "Tom y Jerry:poder y querer"{
+test "Poder y Querer comer."{
+assert.that(tom.puedeComerRatonQueEstaA_(100)) //Da True si puede 
+assert.that (tom.puedeComerA_QueEstaA_(nibbles,10)) // Da True si puede
+    }
+}
+
+//### Casos de prueba
