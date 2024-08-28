@@ -21,7 +21,7 @@ object tom {
 	method puedeComerRatonQueEstaA_(distancia) {
 		return self.energiaQueGastaEnCorrer_(distancia) <= energia
 	}
-	method puedeComerA_QueEstaA_(raton,distancia) {
+	method quiereComerA_QueEstaA_(raton,distancia) {
 		return self.energiaQueGastaEnCorrer_(distancia) <= self.energiaQueGanaAlComerA_(raton)
 	}	
 }

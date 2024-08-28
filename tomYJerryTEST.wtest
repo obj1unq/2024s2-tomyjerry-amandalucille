@@ -22,8 +22,21 @@ test "tom come a jerry y nibbles"
 describe "Tom y Jerry:poder y querer"{
 test "Poder y Querer comer."{
 assert.that(tom.puedeComerRatonQueEstaA_(100)) //Da True si puede 
-assert.that (tom.puedeComerA_QueEstaA_(nibbles,10)) // Da True si puede
+assert.that (tom.quiereComerA_QueEstaA_(nibbles,10)) // Da True si puede
     }
 }
 
-//### Casos de prueba
+//### Casos de prueba Parte 3: No puede comer
+
+describe "Tom y Jerry:No puede comer"{
+
+test "No puede comer"{
+    assert.notThat(tom.puedeComerRatonQueEstaA_(120)) //Da False si puede comer a jerry
+    assert.notThat(tom.quiereComerA_QueEstaA_(jerry,120)) //Da False si quiere comer jerry
+    assert.that(tom.puedeComerRatonQueEstaA_(96)) //Da True si puede comer nibbles
+    assert.notThat(tom.quiereComerA_QueEstaA_(nibbles,120)) //Da False si quiere comer nibbles
+    assert.that(tom.puedeComerRatonQueEstaA_(60)) //Da True si puede comer nibbles
+    assert.that(tom.quiereComerA_QueEstaA_(nibbles,60)) //Da True si quiere comer nibbles
+    }
+}
+
